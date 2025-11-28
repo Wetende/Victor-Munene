@@ -71,7 +71,7 @@ const FooterStyle01 = (props) => {
                             </Link>
                         </Col>
                         <Col md={6} className="flex justify-center items-center text-center sm:mb-[20px]">
-                            <p className="mb-0">&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" rel="noreferrer" href="https://www.themezaa.com/" className="hover:text-white" target="_blank"> ThemeZaa</a></p>
+                            <p className="mb-0">&copy; {new Date().getFullYear()} Victor Munene. All rights reserved.</p>
                         </Col>
                         <Col md={3} className="text-right sm:text-center">
                             <SocialIcons size="xs" theme="social-icon-style-01" className="justify-end sm:justify-center" iconColor={props.theme === "dark" ? "light" : "dark"} data={iconData} />

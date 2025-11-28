@@ -84,7 +84,7 @@ const FooterStyle02 = (props) => {
                             </ul>
                         </Col>
                         <Col md={6} className="text-right sm:text-center xs:text-left">
-                            <span className="inline-block">&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" rel="noreferrer" href="https://www.themezaa.com/" target="_blank" className="text-themecolor underline underline-offset-4"> ThemeZaa</a></span>
+                            <span className="inline-block">&copy; {new Date().getFullYear()} Victor Munene. All rights reserved.
                         </Col>
                     </Row>
                 </Container>

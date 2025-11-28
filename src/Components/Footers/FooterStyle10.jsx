@@ -27,7 +27,7 @@ const FooterStyle10 = (props) => {
                         </Link>
                     </Col>
                     <Col sm={8} className="text-right xs:text-center">
-                        <p className="mb-0">&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" rel="noreferrer" className="text-themecolor font-sans underline underline-offset-4 font-normal text-base" href="https://www.themezaa.com/" target="_blank"> ThemeZaa</a></p>
+                        <p className="mb-0">&copy; {new Date().getFullYear()} Victor Munene. All rights reserved.
                     </Col>
                 </Row>
             </Container>

@@ -7,17 +7,17 @@ import { Parallax } from 'react-scroll-parallax'
 import { m } from "framer-motion"
 
 // Components
-import { fadeIn, fadeInLeft } from '../../Functions/GlobalAnimations'
-import Header, { HamburgerMenu, HeaderNav } from '../../Components/Header/Header'
-import PortfolioOverlay from '../../Components/Portfolio/PortfolioOverlay'
-import ProgressBar from '../../Components/Progressbar/ProgressBar'
-import SocialIcons from '../../Components/SocialIcon/SocialIcons'
-import { Footer } from '../../Components/Footers/Footer'
-import ReactCustomScrollbar from '../../Components/ReactCustomScrollbar'
-import { TextAnime } from '../../Components/FancyText/FancyText'
+import { fadeIn, fadeInLeft } from '../Functions/GlobalAnimations'
+import Header, { HamburgerMenu, HeaderNav } from '../Components/Header/Header'
+import PortfolioOverlay from '../Components/Portfolio/PortfolioOverlay'
+import ProgressBar from '../Components/Progressbar/ProgressBar'
+import SocialIcons from '../Components/SocialIcon/SocialIcons'
+import { Footer } from '../Components/Footers/Footer'
+import ReactCustomScrollbar from '../Components/ReactCustomScrollbar'
+import { TextAnime } from '../Components/FancyText/FancyText'
 
 // Data
-import { ProgressBarData01 } from '../../Components/Progressbar/ProgressBarData'
+import { ProgressBarData01 } from '../Components/Progressbar/ProgressBarData'
 
 const PortfolioOverlayData = [
   {
@@ -93,7 +93,7 @@ const SocialIconsData = [
   }
 ]
 
-const PersonalportfolioPage = (props) => {
+const Home = (props) => {
   return (
     <div style={props.style}>
       {/* Header Start */}
@@ -290,4 +290,4 @@ const PersonalportfolioPage = (props) => {
   )
 }
 
-export default PersonalportfolioPage
+export default Home

@@ -95,7 +95,7 @@ const FooterStyle05 = (props) => {
                                 </div>
                             )}
                         </Formik>
-                        <p>&copy; Copyright {new Date().getFullYear()} <Link aria-label="link" to="/" className="underline underline-offset-4 text-themecolor font-normal">Litho</Link></p>
+                        <p>&copy; Copyright {new Date().getFullYear()} Victor Munene. All rights reserved.
                     </Col>
                 </Row>
             </Container>

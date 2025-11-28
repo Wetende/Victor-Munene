@@ -71,7 +71,7 @@ const FooterStyle08 = (props) => {
                             </ul>
                         </Col>
                         <Col md={6} className="justify-end flex sm:justify-center text-center md:text-end">
-                            <p>&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" target="_blank" rel="noreferrer" href="https://www.themezaa.com/" className="underline underline-offset-4 text-themecolor">ThemeZaa</a></p>
+                            <p>&copy; {new Date().getFullYear()} Victor Munene. All rights reserved.
                         </Col>
                     </Row>
                 </Container>

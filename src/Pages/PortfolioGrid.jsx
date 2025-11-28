@@ -5,12 +5,12 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Parallax } from "react-scroll-parallax";
 
 // Components
-import PortfolioColorful from '../../../Components/Portfolio/PortfolioColorful'
+import PortfolioColorful from '../Components/Portfolio/PortfolioColorful'
 
 // Data
-import { FilterData, portfolioColorfulMetroData } from '../../../Components/Portfolio/PortfolioData'
+import { FilterData, portfolioColorfulMetroData } from '../Components/Portfolio/PortfolioData'
 
-const portfolioColorfulMetroPage = (props) => {
+const PortfolioGrid = (props) => {
   return (
     <div style={props.style}>
       {/* Parallax Section Start */}
@@ -45,4 +45,4 @@ const portfolioColorfulMetroPage = (props) => {
   )
 }
 
-export default portfolioColorfulMetroPage
+export default PortfolioGrid

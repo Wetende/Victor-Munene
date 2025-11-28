@@ -7,14 +7,14 @@ import { m } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
-import Buttons from '../../Components/Button/Buttons'
-import Overlap from '../../Components/Overlap/Overlap';
-import CustomModal from '../../Components/CustomModal'
-import FooterStyle01 from "../../Components/Footers/FooterStyle01";
-import { fadeIn } from '../../Functions/GlobalAnimations';
+import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../Components/Header/Header";
+import Buttons from '../Components/Button/Buttons'
+import Overlap from '../Components/Overlap/Overlap';
+import CustomModal from '../Components/CustomModal'
+import FooterStyle01 from "../Components/Footers/FooterStyle01";
+import { fadeIn } from '../Functions/GlobalAnimations';
 
-const SingleProjectPage03 = (props) => {
+const Project03 = (props) => {
 
     return (
         <div style={props.style}>
@@ -305,4 +305,4 @@ const SingleProjectPage03 = (props) => {
     )
 }
 
-export default SingleProjectPage03
+export default Project03

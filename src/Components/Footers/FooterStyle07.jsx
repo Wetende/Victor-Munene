@@ -22,7 +22,7 @@ const FooterStyle07 = (props) => {
                                 {props.logo && <img loading="lazy" src={props.logo} alt="logo" width="111" height="36" />}
                             </Link>
                             <p className="mb-[25px] text-slateblue sm:w-[90%] md:mb-[15px] md:text-center sm:text-start">We create digital experiences for brands companies by using creativity.</p>
-                            <p>© Copyright {new Date().getFullYear()} <Link to="/" className="underline underline-offset-4 text-white font-normal">Litho</Link></p>
+                            <p>© Copyright {new Date().getFullYear()} Victor Munene. All rights reserved.
                         </Col>
                         <FooterMenu data={FooterData.slice(0, 4)} lg={{ span: 2, offSet: 1, order: 0 }} md={{ span: 3, order: 0 }} sm={{ span: 4, offSet: 1, order: 2 }} className="xl:px-[15px] md:mb-[40px] xs:mb-[25px]" titleClass="capitalize" />
                     </Row>

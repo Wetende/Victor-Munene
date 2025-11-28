@@ -8,26 +8,26 @@ import { Form, Formik } from 'formik';
 import { AnimatePresence, m } from 'framer-motion'
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
-import IconWithText from '../../Components/IconWithText/IconWithText'
-import SocialIcons from '../../Components/SocialIcon/SocialIcons'
-import ProgressBar from '../../Components/Progressbar/ProgressBar'
-import Overlap from '../../Components/Overlap/Overlap'
-import Tab02 from '../../Components/Tab/Tab02'
-import PortfolioOverlay from '../../Components/Portfolio/PortfolioOverlay'
-import Clients from '../../Components/Clients/Clients'
-import Blockquote from '../../Components/BlockQuote/Blockquote'
-import { Input } from '../../Components/Form/Form'
-import MessageBox from '../../Components/MessageBox/MessageBox';
-import FooterStyle01 from '../../Components/Footers/FooterStyle01'
-import Buttons from '../../Components/Button/Buttons'
-import { fadeIn } from '../../Functions/GlobalAnimations'
-import Counter from '../../Components/Counters/Counter'
-import { resetForm, sendEmail } from '../../Functions/Utilities';
+import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../Components/Header/Header";
+import IconWithText from '../Components/IconWithText/IconWithText'
+import SocialIcons from '../Components/SocialIcon/SocialIcons'
+import ProgressBar from '../Components/Progressbar/ProgressBar'
+import Overlap from '../Components/Overlap/Overlap'
+import Tab02 from '../Components/Tab/Tab02'
+import PortfolioOverlay from '../Components/Portfolio/PortfolioOverlay'
+import Clients from '../Components/Clients/Clients'
+import Blockquote from '../Components/BlockQuote/Blockquote'
+import { Input } from '../Components/Form/Form'
+import MessageBox from '../Components/MessageBox/MessageBox';
+import FooterStyle01 from '../Components/Footers/FooterStyle01'
+import Buttons from '../Components/Button/Buttons'
+import { fadeIn } from '../Functions/GlobalAnimations'
+import Counter from '../Components/Counters/Counter'
+import { resetForm, sendEmail } from '../Functions/Utilities';
 
 
 // Data
-import { FilterData } from '../../Components/Portfolio/PortfolioData';
+import { FilterData } from '../Components/Portfolio/PortfolioData';
 const iconData = [
   {
     color: "rgba(255,255,255,0.5)",
@@ -293,7 +293,7 @@ const ClientData = [
   }
 ]
 
-const AboutMePage = (props) => {
+const About = (props) => {
   return (
     <div style={props.style}>
       {/* Header Start */}
@@ -428,7 +428,7 @@ const AboutMePage = (props) => {
               <span className="text-xlg font-serif text-darkgray lg:text-lg md:leading-[26px]">We create digital ideas that are <span className="font-semibold">bigger, braver and better.</span></span>
             </Col>
             <Col lg={3} md={4} className="sm:justify-center sm:flex">
-              <Buttons ariaLabel="button" to="/portfolio/portfolio-colorful-masonry" className="mx-[10px] rounded-none font-medium font-serif uppercase bg-[#fff] hover:text-white" themeColor="#000" size="lg" color="#000" icon="fas fa-arrow-right right-icon" iconPosition="after" title="Explore litho" />
+              <Buttons ariaLabel="button" to="/portfolio/portfolio-colorful-metro" className="mx-[10px] rounded-none font-medium font-serif uppercase bg-[#fff] hover:text-white" themeColor="#000" size="lg" color="#000" icon="fas fa-arrow-right right-icon" iconPosition="after" title="Explore portfolio" />
             </Col>
           </Row>
         </Container>
@@ -633,4 +633,4 @@ const AboutMePage = (props) => {
   )
 }
 
-export default AboutMePage
+export default About

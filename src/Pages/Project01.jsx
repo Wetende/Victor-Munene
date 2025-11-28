@@ -8,13 +8,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard } from "swiper/modules";
 
 // Components
-import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar, } from "../../Components/Header/Header";
-import Blockquote from '../../Components/BlockQuote/Blockquote'
-import Buttons from '../../Components/Button/Buttons'
-import { fadeIn, fadeInLeft, zoomIn } from "../../Functions/GlobalAnimations";
-import SocialIcons from "../../Components/SocialIcon/SocialIcons";
-import FooterStyle01 from "../../Components/Footers/FooterStyle01";
-import Overlap from "../../Components/Overlap/Overlap";
+import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar, } from "../Components/Header/Header";
+import Blockquote from '../Components/BlockQuote/Blockquote'
+import Buttons from '../Components/Button/Buttons'
+import { fadeIn, fadeInLeft, zoomIn } from "../Functions/GlobalAnimations";
+import SocialIcons from "../Components/SocialIcon/SocialIcons";
+import FooterStyle01 from "../Components/Footers/FooterStyle01";
+import Overlap from "../Components/Overlap/Overlap";
 
 // Data
 const SwiperImgData = [
@@ -55,7 +55,7 @@ const SocialIconsData = [
   },
 ];
 
-const SingleProjectPage01 = (props) => {
+const Project01 = (props) => {
   return (
     <div style={props.style}>
       {/* Header Start */}
@@ -391,4 +391,4 @@ const SingleProjectPage01 = (props) => {
   );
 };
 
-export default SingleProjectPage01;
+export default Project01;

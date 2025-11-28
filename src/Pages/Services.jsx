@@ -10,23 +10,23 @@ import { Keyboard } from "swiper/modules";
 import { Link as ScrollTo } from "react-scroll"
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
-import Buttons from '../../Components/Button/Buttons'
-import Services from '../../Components/Services/Services';
-import CustomModal from '../../Components/CustomModal'
-import CustomIconWithText from '../../Components/CustomIconWithText/CustomIconWithText'
-import { fadeIn } from '../../Functions/GlobalAnimations';
-import PricingTable04 from '../../Components/PricingTable/PricingTable04';
-import Testimonials from '../../Components/Testimonials/Testimonials';
-import Clients from '../../Components/Clients/Clients';
-import FooterStyle01 from '../../Components/Footers/FooterStyle01';
-import Overlap from '../../Components/Overlap/Overlap';
+import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../Components/Header/Header";
+import Buttons from '../Components/Button/Buttons'
+import ServicesComponent from '../Components/Services/Services';
+import CustomModal from '../Components/CustomModal'
+import CustomIconWithText from '../Components/CustomIconWithText/CustomIconWithText'
+import { fadeIn } from '../Functions/GlobalAnimations';
+import PricingTable04 from '../Components/PricingTable/PricingTable04';
+import Testimonials from '../Components/Testimonials/Testimonials';
+import Clients from '../Components/Clients/Clients';
+import FooterStyle01 from '../Components/Footers/FooterStyle01';
+import Overlap from '../Components/Overlap/Overlap';
 
 // Data
-import { TestimonialsData02 } from '../../Components/Testimonials/TestimonialsData';
-import { CustomIconWithTextData2 } from '../../Components/CustomIconWithText/CustomIconWithTextData';
-import { serviceData5 } from '../../Components/Services/ServicesData';
-import { pricingTable04 } from '../../Components/PricingTable/PricingTableData';
+import { TestimonialsData02 } from '../Components/Testimonials/TestimonialsData';
+import { CustomIconWithTextData2 } from '../Components/CustomIconWithText/CustomIconWithTextData';
+import { serviceData5 } from '../Components/Services/ServicesData';
+import { pricingTable04 } from '../Components/PricingTable/PricingTableData';
 
 const swiperData = [
   {
@@ -73,7 +73,7 @@ const ClientData = [
   }
 ]
 
-const OurServicesPage = (props) => {
+const Services = (props) => {
   const swiperRef = React.useRef(null)
   return (
     <div style={props.style}>
@@ -175,7 +175,7 @@ const OurServicesPage = (props) => {
           </Row>
           <Row className="justify-center">
             <Col lg={12} md={10} xs={12} className="xs:px-0">
-              <Services grid="row-cols-lg-3 row-cols-1 md:my-0 md:mx-auto gap-y-[15px]" theme='service-style-05' className="" data={serviceData5} animation={fadeIn} />
+              <ServicesComponent grid="row-cols-lg-3 row-cols-1 md:my-0 md:mx-auto gap-y-[15px]" theme='service-style-05' className="" data={serviceData5} animation={fadeIn} />
             </Col>
           </Row>
         </Container>
@@ -191,7 +191,7 @@ const OurServicesPage = (props) => {
               <Row>
                 <Col className="relative mb-12 lg:mb-[40px] sm:mb-[7.5rem] xs:mb-[4.5rem]">
                   <span className="font-serif mb-[20px] text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e] inline-block uppercase font-medium tracking-[1px]">What we offer services</span>
-                  <h5 className="font-serif font-semibold text-darkgray">Litho theme lets you easily create websites in a matter of minutes.</h5>
+                  <h5 className="font-serif font-semibold text-darkgray">We help you transform data into actionable insights.</h5>
                   <p className="w-[80%] mb-[4.5rem] md:w-full">Lorem Ipsum is simply dummy text of the printing and typesetting industry ipsum has been the industry's standard dummy text when an unknown a galley of type and scrambled it to make a type book.</p>
                   <div className="flex">
                     <div onClick={() => swiperRef.current.swiper.slidePrev()} className="btn-slider-next transition-default rounded-full flex justify-center items-center text-black bg-transparent border-[1px] border-mediumgray right-inherit left-[65px] h-[40px] w-[40px] cursor-pointer hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] hover:border-white hover:bg-white">
@@ -312,7 +312,7 @@ const OurServicesPage = (props) => {
           <Row className="xs:mx-0">
             <Overlap className="relative bg-white rounded-[5px] px-[0px] py-[65px] md:p-[40px] xs:px-[20px] flex sm:flex sm:justify-center sm:items-center sm:flex-col">
               <Col lg={{ span: 5, offset: 1 }} md={7} sm={8} className="text-start sm:mb-[20px]">
-                <h5 className="font-serif font-medium text-darkgray w-[95%] mb-0 lg:w-full sm:text-center">Litho is meant to simplify the website building.</h5>
+                <h5 className="font-serif font-medium text-darkgray w-[95%] mb-0 lg:w-full sm:text-center">We simplify complex data challenges.</h5>
               </Col>
               <Col lg={{ span: 4, offset: 2 }} md={5} sm={8} className="ourservice-start-your-project text-center flex items-center md:text-start sm:justify-center">
                 {/* Modal Component Start */}
@@ -342,4 +342,4 @@ const OurServicesPage = (props) => {
   )
 }
 
-export default OurServicesPage
+export default Services

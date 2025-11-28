@@ -69,7 +69,7 @@ const Wrapper = (props) => {
         if (props.defaultOpen === true) {
             setTimeout(() => {
                 import("../Functions/Utilities").then(module => {
-                    if (module.getCookie("litho-promo-popup") === "shown") {
+                    if (module.getCookie("promo-popup") === "shown") {
                         handleCloseEvent();
                     } else {
                         handleOpenEvent();

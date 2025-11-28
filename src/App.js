@@ -12,37 +12,21 @@ import GlobalContext from "./Context/Context";
 import ScrollToTopButton from "./Components/ScrollToTop";
 
 // Main Pages
-const PersonalportfolioPage = lazy(() =>
-  import("./Pages/Home/PersonalPortfolio")
-);
+const Home = lazy(() => import("./Pages/Home"));
 
 // Portfolio Pages
-const PortfolioPage = lazy(() => import("./Pages/Portfolios"));
-const PortfolioColorfulMetroPage = lazy(() =>
-  import("./Pages/Portfolios/PortfolioColorful/PortfolioColorfulMetro")
-);
-const SingleProjectPage01 = lazy(() =>
-  import("./Pages/Portfolios/SingleProjectPage01")
-);
-const SingleProjectPage02 = lazy(() =>
-  import("./Pages/Portfolios/SingleProjectPage02")
-);
-const SingleProjectPage03 = lazy(() =>
-  import("./Pages/Portfolios/SingleProjectPage03")
-);
-const SingleProjectPage04 = lazy(() =>
-  import("./Pages/Portfolios/SingleProjectPage04")
-);
-const SingleProjectPage05 = lazy(() =>
-  import("./Pages/Portfolios/SingleProjectPage05")
-);
+const PortfolioLayout = lazy(() => import("./Pages/PortfolioLayout"));
+const PortfolioGrid = lazy(() => import("./Pages/PortfolioGrid"));
+const Project01 = lazy(() => import("./Pages/Project01"));
+const Project02 = lazy(() => import("./Pages/Project02"));
+const Project03 = lazy(() => import("./Pages/Project03"));
+const Project04 = lazy(() => import("./Pages/Project04"));
+const Project05 = lazy(() => import("./Pages/Project05"));
 
 // About, Services, Contact Pages
-const AboutMePage = lazy(() => import("./Pages/About/AboutMePage"));
-const OurServicesPage = lazy(() => import("./Pages/Services/OurServicesPage"));
-const ContactUsModernPage = lazy(() =>
-  import("./Pages/Contact/ContactUsModernPage")
-);
+const About = lazy(() => import("./Pages/About"));
+const Services = lazy(() => import("./Pages/Services"));
+const Contact = lazy(() => import("./Pages/Contact"));
 
 // System Pages
 const NotFoundPage = lazy(() => import("./Pages/404"));
@@ -121,9 +105,7 @@ function App() {
                   <Route
                     path="/"
                     element={
-                      <PersonalportfolioPage
-                        style={{ "--base-color": "#ffeb04" }}
-                      />
+                      <Home style={{ "--base-color": "#ffeb04" }} />
                     }
                   />
 
@@ -131,7 +113,7 @@ function App() {
                   <Route
                     path="/page/about-me"
                     element={
-                      <AboutMePage style={{ "--base-color": "#0038e3" }} />
+                      <About style={{ "--base-color": "#0038e3" }} />
                     }
                   />
 
@@ -139,7 +121,7 @@ function App() {
                   <Route
                     path="/page/our-services"
                     element={
-                      <OurServicesPage style={{ "--base-color": "#0038e3" }} />
+                      <Services style={{ "--base-color": "#0038e3" }} />
                     }
                   />
 
@@ -147,15 +129,13 @@ function App() {
                   <Route
                     path="portfolio"
                     element={
-                      <PortfolioPage style={{ "--base-color": "#0038e3" }} />
+                      <PortfolioLayout style={{ "--base-color": "#0038e3" }} />
                     }
                   >
                     <Route
                       path="portfolio-colorful-metro"
                       element={
-                        <PortfolioColorfulMetroPage
-                          style={{ "--base-color": "#fff" }}
-                        />
+                        <PortfolioGrid style={{ "--base-color": "#fff" }} />
                       }
                     />
                   </Route>
@@ -164,41 +144,31 @@ function App() {
                   <Route
                     path="/portfolio/single-project-page-01"
                     element={
-                      <SingleProjectPage01
-                        style={{ "--base-color": "#0038e3" }}
-                      />
+                      <Project01 style={{ "--base-color": "#0038e3" }} />
                     }
                   />
                   <Route
                     path="/portfolio/single-project-page-02"
                     element={
-                      <SingleProjectPage02
-                        style={{ "--base-color": "#0038e3" }}
-                      />
+                      <Project02 style={{ "--base-color": "#0038e3" }} />
                     }
                   />
                   <Route
                     path="/portfolio/single-project-page-03"
                     element={
-                      <SingleProjectPage03
-                        style={{ "--base-color": "#0038e3" }}
-                      />
+                      <Project03 style={{ "--base-color": "#0038e3" }} />
                     }
                   />
                   <Route
                     path="/portfolio/single-project-page-04"
                     element={
-                      <SingleProjectPage04
-                        style={{ "--base-color": "#fd961e" }}
-                      />
+                      <Project04 style={{ "--base-color": "#fd961e" }} />
                     }
                   />
                   <Route
                     path="/portfolio/single-project-page-05"
                     element={
-                      <SingleProjectPage05
-                        style={{ "--base-color": "#0038e3" }}
-                      />
+                      <Project05 style={{ "--base-color": "#0038e3" }} />
                     }
                   />
 
@@ -206,9 +176,7 @@ function App() {
                   <Route
                     path="/page/contact-modern"
                     element={
-                      <ContactUsModernPage
-                        style={{ "--base-color": "#0038e3" }}
-                      />
+                      <Contact style={{ "--base-color": "#0038e3" }} />
                     }
                   />
 

@@ -8,14 +8,14 @@ import { m } from 'framer-motion';
 import { Autoplay, EffectFade, Keyboard } from "swiper/modules";
 
 // Components
-import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from '../../Components/Header/Header'
-import Buttons from '../../Components/Button/Buttons'
-import ImageGallery from '../../Components/ImageGallery/ImageGallery'
-import Clients from '../../Components/Clients/Clients'
-import CustomModal from '../../Components/CustomModal'
-import { fadeIn, zoomIn } from '../../Functions/GlobalAnimations';
-import FooterStyle01 from '../../Components/Footers/FooterStyle01';
-import Overlap from '../../Components/Overlap/Overlap';
+import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from '../Components/Header/Header'
+import Buttons from '../Components/Button/Buttons'
+import ImageGallery from '../Components/ImageGallery/ImageGallery'
+import Clients from '../Components/Clients/Clients'
+import CustomModal from '../Components/CustomModal'
+import { fadeIn, zoomIn } from '../Functions/GlobalAnimations';
+import FooterStyle01 from '../Components/Footers/FooterStyle01';
+import Overlap from '../Components/Overlap/Overlap';
 
 // Data
 
@@ -74,7 +74,7 @@ const SwiperImgData = [
     }
 ]
 
-const SingleProjectPage04 = (props) => {
+const Project04 = (props) => {
     return (
         <div style={props.style}>
             {/* Header Start */}
@@ -400,4 +400,4 @@ const SingleProjectPage04 = (props) => {
     )
 }
 
-export default SingleProjectPage04
+export default Project04

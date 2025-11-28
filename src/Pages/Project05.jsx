@@ -14,18 +14,18 @@ import Header, {
   HeaderNav,
   Menu,
   SearchBar,
-} from "../../Components/Header/Header";
+} from "../Components/Header/Header";
 import { Parallax } from "react-scroll-parallax";
-import ImageGallery from "../../Components/ImageGallery/ImageGallery";
-import FooterStyle01 from "../../Components/Footers/FooterStyle01";
+import ImageGallery from "../Components/ImageGallery/ImageGallery";
+import FooterStyle01 from "../Components/Footers/FooterStyle01";
 import {
   fadeIn,
   fadeInLeft,
   fadeInRight,
-} from "../../Functions/GlobalAnimations";
+} from "../Functions/GlobalAnimations";
 
 // Data
-import { imageGalleryData02 } from "../../Components/ImageGallery/ImageGalleryData";
+import { imageGalleryData02 } from "../Components/ImageGallery/ImageGalleryData";
 const TestimonialsCarouselData = [
   {
     img: "https://via.placeholder.com/1215x860",
@@ -47,7 +47,7 @@ const TestimonialsCarouselData = [
   },
 ];
 
-const SingleProjectPage05 = (props) => {
+const Project05 = (props) => {
   const swiperRef = useRef(null);
   return (
     <div style={props.style}>
@@ -131,7 +131,7 @@ const SingleProjectPage05 = (props) => {
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           keyboard={{ enabled: true, onlyInViewport: true }}
           centeredSlides={true}
-          className="SingleProjectPage05 relative black-move"
+          className="Project05 relative black-move"
         >
           {TestimonialsCarouselData.map((item, i) => {
             return (
@@ -534,4 +534,4 @@ const SingleProjectPage05 = (props) => {
   );
 };
 
-export default SingleProjectPage05;
+export default Project05;

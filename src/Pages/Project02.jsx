@@ -6,18 +6,18 @@ import { Link } from "react-router-dom";
 import { m } from "framer-motion";
 
 // Components
-import Buttons from '../../Components/Button/Buttons'
-import FooterStyle01 from "../../Components/Footers/FooterStyle01";
-import ImageGallery from "../../Components/ImageGallery/ImageGallery";
-import SocialIcons from "../../Components/SocialIcon/SocialIcons";
-import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar, } from "../../Components/Header/Header";
-import CustomModal from '../../Components/CustomModal'
+import Buttons from '../Components/Button/Buttons'
+import FooterStyle01 from "../Components/Footers/FooterStyle01";
+import ImageGallery from "../Components/ImageGallery/ImageGallery";
+import SocialIcons from "../Components/SocialIcon/SocialIcons";
+import Header, { HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar, } from "../Components/Header/Header";
+import CustomModal from '../Components/CustomModal'
 
 // Function
-import { fadeIn, fadeInRight } from "../../Functions/GlobalAnimations";
+import { fadeIn, fadeInRight } from "../Functions/GlobalAnimations";
 
 // Data
-import { imageGalleryData01 } from "../../Components/ImageGallery/ImageGalleryData";
+import { imageGalleryData01 } from "../Components/ImageGallery/ImageGalleryData";
 
 const SocialIconsData = [
   {
@@ -42,7 +42,7 @@ const SocialIconsData = [
   },
 ];
 
-const SingleProjectPage02 = (props) => {
+const Project02 = (props) => {
   return (
     <div style={props.style}>
       {/* Header Start */}
@@ -475,4 +475,4 @@ const SingleProjectPage02 = (props) => {
   );
 };
 
-export default SingleProjectPage02;
+export default Project02;

@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React from "react";
 
 // Libraries
 import { Col, Navbar } from "react-bootstrap";
@@ -15,7 +15,7 @@ import {
 } from "../Components/Header/Header";
 import FooterStyle01 from "../Components/Footers/FooterStyle01";
 
-const PortfolioPage = (props) => {
+const PortfolioLayout = (props) => {
   return (
     <div style={props.style}>
       {/* Header Start */}
@@ -58,4 +58,4 @@ const PortfolioPage = (props) => {
   );
 };
 
-export default PortfolioPage;
+export default PortfolioLayout;

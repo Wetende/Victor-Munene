@@ -6,7 +6,7 @@ const TabData01 = [
         title: 'Business planning',
         img: 'https://via.placeholder.com/800x625',
         content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        buttonTitle: "Discover Litho",
+        buttonTitle: "View Project",
         buttonLink: "/"
     },
     {
@@ -16,7 +16,7 @@ const TabData01 = [
         title: 'Business research',
         img: 'https://via.placeholder.com/800x625',
         content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        buttonTitle: "Discover Litho",
+        buttonTitle: "View Project",
         buttonLink: "/"
     },
     {
@@ -26,7 +26,7 @@ const TabData01 = [
         title: 'Business target',
         img: 'https://via.placeholder.com/800x625',
         content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        buttonTitle: "Discover Litho",
+        buttonTitle: "View Project",
         buttonLink: "/"
     },
     {
@@ -36,7 +36,7 @@ const TabData01 = [
         title: 'Business campaign',
         img: 'https://via.placeholder.com/800x625',
         content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        buttonTitle: "Discover Litho",
+        buttonTitle: "View Project",
         buttonLink: "/"
     }
 ]

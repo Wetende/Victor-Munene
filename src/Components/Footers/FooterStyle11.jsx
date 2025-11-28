@@ -49,7 +49,7 @@ const FooterStyle11 = (props) => {
                         <h4 className="font-serif font-semibold mb-28 text-[2.85rem] leading-[3.4rem]">
                             <a aria-label="mail" rel="noreferrer" className="border-none md:mb-[15px] no-underline text-gradient bg-gradient-to-r from-[#5065da] via-[#c557ad] to-[#e66176]" href="mailto:info@domain.com">info@domain.com</a>
                         </h4>
-                        <p className="mb-0 uppercase text-sm">&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" rel="noreferrer" className="text-themecolor font-serif underline underline-offset-[6px] font-medium text-sm inline-block" href="https://www.themezaa.com/" target="_blank"> ThemeZaa</a></p>
+                        <p className="mb-0 uppercase text-sm">&copy; {new Date().getFullYear()} Victor Munene. All rights reserved.
                     </Col>
                 </Row>
             </Container>

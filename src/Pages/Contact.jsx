@@ -9,16 +9,16 @@ import { Formik, Form } from 'formik';
 import { AnimatePresence, m } from 'framer-motion';
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
-import Buttons from '../../Components/Button/Buttons'
-import { ContactFormStyle02Schema } from '../../Components/Form/FormSchema';
-import { Input, TextArea } from '../../Components/Form/Form'
-import MessageBox from '../../Components/MessageBox/MessageBox';
-import GoogleMap from '../../Components/GoogleMap/GoogleMap';
-import FooterStyle01 from '../../Components/Footers/FooterStyle01';
-import { fadeIn } from "../../Functions/GlobalAnimations";
+import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../Components/Header/Header";
+import Buttons from '../Components/Button/Buttons'
+import { ContactFormStyle02Schema } from '../Components/Form/FormSchema';
+import { Input, TextArea } from '../Components/Form/Form'
+import MessageBox from '../Components/MessageBox/MessageBox';
+import GoogleMap from '../Components/GoogleMap/GoogleMap';
+import FooterStyle01 from '../Components/Footers/FooterStyle01';
+import { fadeIn } from "../Functions/GlobalAnimations";
 import ReCAPTCHA from 'react-google-recaptcha';
-import { sendEmail, resetForm } from "../../Functions/Utilities";
+import { sendEmail, resetForm } from "../Functions/Utilities";
 
 // Data
 const SwiperImgData = [
@@ -33,7 +33,7 @@ const SwiperImgData = [
   }
 ]
 
-const ContactUsModernPage = (props) => {
+const Contact = (props) => {
   const form = useRef(null)
   const recaptcha = useRef()
 
@@ -119,7 +119,7 @@ const ContactUsModernPage = (props) => {
       {/* Section Start */}
       <m.section className="relative h-[700px] md:h-[550px] sm:h-[350px]" {...fadeIn}>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2]">
-          <Buttons to="#" rel="noreferrer" className="btn-fill w-auto z-[2] font-medium !tracking-normal font-serif uppercase rounded-none btn-shadow" size="xl" themeColor="#232323" color="#fff" title="litho design life" />
+          <Buttons to="#" rel="noreferrer" className="btn-fill w-auto z-[2] font-medium !tracking-normal font-serif uppercase rounded-none btn-shadow" size="xl" themeColor="#232323" color="#fff" title="Portfolio" />
         </div>
         <Swiper
           modules={[Autoplay, EffectFade, Keyboard]}
@@ -249,4 +249,4 @@ const ContactUsModernPage = (props) => {
   )
 }
 
-export default ContactUsModernPage
+export default Contact

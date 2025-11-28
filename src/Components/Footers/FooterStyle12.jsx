@@ -62,7 +62,7 @@ const FooterStyle12 = (props) => {
                 <Container>
                     <Row>
                         <Col sm={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }} xs={{ order: 2 }} className="text-start flex sm:justify-center md:text-end md:mb-4 xs:justify-start">
-                            <p>&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" rel="noreferrer" href="https://www.themezaa.com/" target="_blank" className="underline underline-offset-4 text-themecolor hover:text-basecolor">ThemeZaa</a></p>
+                            <p>&copy; {new Date().getFullYear()} Victor Munene. All rights reserved.
                         </Col>
                         <Col sm={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }} xs={{ order: 1 }} className="md:mb-[0.75rem] xs:mb-[15px]">
                             <ul className="flex justify-end md:justify-center xs:flex-col">

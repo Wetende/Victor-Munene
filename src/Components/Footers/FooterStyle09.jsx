@@ -48,7 +48,7 @@ const FooterStyle09 = (props) => {
                         <Link aria-label="link" to="/">
                             <img src={props.logo} alt="logo" width="111" height="36" className="mb-[15px] md:mx-auto md:mt-0" />
                         </Link>
-                        <p>&copy; Copyright {new Date().getFullYear()} <Link aria-label="link" to="/" rel="noreferrer" className="underline underline-offset-4 font-medium hover:text-themecolor">Litho</Link></p>
+                        <p>&copy; Copyright {new Date().getFullYear()} Victor Munene. All rights reserved.
                     </Col>
                     <Col lg={{ order: 2 }} md={{ span: 6, order: 1 }} xs={{ span: 12, order: 1 }} className="text-center items-center flex flex-col md:items-start sm:mb-[50px] sm:items-center xs:mb-[30px]">
                         <span className="mb-[25px] block sm:w-full md:text-start md:w-4/5 sm:text-center leading-[18px]">
