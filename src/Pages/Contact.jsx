@@ -81,7 +81,7 @@ const Contact = (props) => {
               </h1>
             </Col>
             <Col className="p-0 sm:!px-[15px]">
-              <h4 className="font-medium text-darkgray font-serif mb-0">We create brand new corporate identities</h4>
+              <h4 className="font-medium text-darkgray font-serif mb-0">Let's transform your data into insights</h4>
             </Col>
           </Row>
         </Container>
@@ -93,21 +93,21 @@ const Contact = (props) => {
         <Container>
           <Row className="items-end">
             <Col className="col-12 col-lg-6 col-md-4 sm:mb-[30px]">
-              <h5 className="font-serif w-[50%] text-darkgray font-medium mb-0 lg:w-[65%] md:w-[95%] xs:w-full">How can we help you today?</h5>
+              <h5 className="font-serif w-[50%] text-darkgray font-medium mb-0 lg:w-[65%] md:w-[95%] xs:w-full">How can I help you today?</h5>
             </Col>
             <Col className="col-12 col-lg-6 col-md-8">
               <Row>
                 <Col className="col-12 col-sm-6 xs:mb-[30px]">
-                  <span className="font-serif block text-darkgray font-medium mb-[10px]">London</span>
-                  <p className="w-[80%] mb-[5px] lg:w-[90%]">401 Broadway, 24th Floor, Orchard View, London, UK</p>
-                  <span className="block mb-[10px]">Tel: 123 456 7890</span>
-                  <a href="https://www.google.com/maps?ll=-37.817214,144.955925&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=IN&amp;mapclient=embed&amp;cid=13153204942596594449" target="_blank" rel="noreferrer" className="uppercase text-sm text-darkgray font-medium border-b hover:border-fastblue border-black hover:text-fastblue">View on google map</a>
+                  <span className="font-serif block text-darkgray font-medium mb-[10px]">Nairobi, Kenya</span>
+                  <p className="w-[80%] mb-[5px] lg:w-[90%]">P.O Box 77-60600, Nairobi</p>
+                  <span className="block mb-[10px]">Tel: 0796436513 / 0799883309</span>
+                  <a href="mailto:Princevick361@gmail.com" className="uppercase text-sm text-darkgray font-medium border-b hover:border-fastblue border-black hover:text-fastblue">Email me</a>
                 </Col>
                 <Col className="col-12 col-sm-6">
-                  <span className="font-serif block text-darkgray font-medium mb-[10px]">France</span>
-                  <p className="w-[80%] mb-[5px] lg:w-[90%]">27 Eden Walk Eden Centre, Orchard View, Paris, France</p>
-                  <span className="block mb-[10px]">Tel: 123 456 7890</span>
-                  <a href="https://www.google.com/maps?ll=-37.817214,144.955925&amp;z=16&amp;t=m&amp;hl=en-US&amp;gl=IN&amp;mapclient=embed&amp;cid=13153204942596594449" target="_blank" rel="noreferrer" className="uppercase text-sm text-darkgray font-medium border-b hover:border-fastblue border-black hover:text-fastblue">View on google map</a>
+                  <span className="font-serif block text-darkgray font-medium mb-[10px]">Contact Information</span>
+                  <p className="w-[80%] mb-[5px] lg:w-[90%]">Email: Princevick361@gmail.com</p>
+                  <span className="block mb-[10px]">Available for remote work</span>
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="uppercase text-sm text-darkgray font-medium border-b hover:border-fastblue border-black hover:text-fastblue">Connect on LinkedIn</a>
                 </Col>
               </Row>
             </Col>
@@ -159,7 +159,7 @@ const Contact = (props) => {
               </div>
             </Col>
             <Col className="col-12 col-lg-6 offset-lg-1 col-md-8">
-              <h4 className="font-serif text-black font-semibold">Let's get in touch with us</h4>
+              <h4 className="font-serif text-black font-semibold">Let's get in touch</h4>
               <Row className="justify-center">
                 <Col>
                   <Formik
@@ -223,19 +223,19 @@ const Contact = (props) => {
             <m.div className="col col-12 col-sm-auto sm:mb-[15px]" {...{ ...fadeIn, transition: { delay: 0.2 } }}>
               <div className="flex justify-center items-center px-[15px] h-full">
                 <i className="feather-headphones align-middle text-lg text-gradient bg-gradient-to-r from-[#e42464] to-[#ff7357] mr-[10px]"></i>
-                <span className="text-darkgray font-serif text-md">+1 123 456 7890</span>
+                <span className="text-darkgray font-serif text-md">0796436513 / 0799883309</span>
               </div>
             </m.div>
             <m.div className="col col-12 col-sm-auto sm:mb-[15px]" {...{ ...fadeIn, transition: { delay: 0.4 } }}>
               <div className="flex justify-center items-center px-[15px] h-full">
                 <i className="feather-mail align-middle text-lg text-gradient bg-gradient-to-r from-[#e42464] to-[#ff7357] mr-[10px]"></i>
-                <a href="mailto:no-reply@domain.com" rel="noreferrer" className="text-darkgray font-serif text-md hover:text-fastblue">no-reply@domain.com</a>
+                <a href="mailto:Princevick361@gmail.com" rel="noreferrer" className="text-darkgray font-serif text-md hover:text-fastblue">Princevick361@gmail.com</a>
               </div>
             </m.div>
             <m.div className="col col-12 col-sm-auto" {...{ ...fadeIn, transition: { delay: 0.6 } }}>
               <div className="flex justify-center items-center px-[15px] h-full">
                 <i className="feather-globe align-middle text-lg text-gradient bg-gradient-to-r from-[#e42464] to-[#ff7357] mr-[10px]"></i>
-                <Link to="/page/contact-modern" className="text-darkgray font-serif text-md hover:text-fastblue">www.yourdomain.com</Link>
+                <span className="text-darkgray font-serif text-md">Nairobi, Kenya</span>
               </div>
             </m.div>
           </Row>

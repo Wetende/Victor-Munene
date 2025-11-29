@@ -7,7 +7,7 @@ require("dotenv").config();
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: 'https://lithoreact.themezaa.com/'
+    origin: 'https://victormunene.com/'
 }))
 
 // setup nodemailer configuration
@@ -36,7 +36,7 @@ app.post("/send", (req, res) => {
         var mailConfig = {
             from: process.env.REACT_APP_SMTP_EMAIL,
             to: email,
-            subject: "Litho - Contact Form",
+            subject: "Victor Munene - Contact Form",
             html: `<html>
             <head>
             <title>HTML email</title>
@@ -74,7 +74,7 @@ app.post("/send", (req, res) => {
         var mailConfig = {
             from: process.env.REACT_APP_SMTP_EMAIL,
             to: email,
-            subject: "Litho - Subscription Form",
+            subject: "Victor Munene - Newsletter Subscription",
             html: `<html>
             <head>
             <title>HTML email</title>

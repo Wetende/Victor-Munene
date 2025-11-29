@@ -332,8 +332,8 @@ const About = (props) => {
         <Container className="relative h-[800px] md:h-[600px] sm:h-[400px]">
           <Row className="items-center h-full md:pb-40 sm:pb-0">
             <Col lg={{ span: 6, offset: 6 }} sm={{ span: 7, offset: 5 }}>
-              <h2 className="font-serif text-white -tracking-[1px] mb-[40px] xs:mb-[25px] font-medium xs:text-center">I'm <span className="text-decoration-line-bottom-thick">brian wilson</span></h2>
-              <p className="w-3/4 md:w-full xs:w-4/5 font-serif text-white leading-[30px] opacity-70 font-light text-xmd mb-10 block xs:mx-auto xs:text-center">I'm a UI/UX designer and front end developer from victoria, australia. I hold a master degree of web design from the world university.</p>
+              <h2 className="font-serif text-white -tracking-[1px] mb-[40px] xs:mb-[25px] font-medium xs:text-center">I'm <span className="text-decoration-line-bottom-thick">Victor Munene</span></h2>
+              <p className="w-3/4 md:w-full xs:w-4/5 font-serif text-white leading-[30px] opacity-70 font-light text-xmd mb-10 block xs:mx-auto xs:text-center">I'm a Senior Data Analyst with Microsoft Certification from Nairobi, Kenya. I specialize in transforming data into actionable insights using Power BI, Tableau, and advanced analytics.</p>
               <div className="text-left xs:text-center">
                 <SocialIcons size="sm" theme="social-icon-style-01" className="justify-start xs:justify-center" iconColor="light" data={iconData} />
               </div>
@@ -369,8 +369,8 @@ const About = (props) => {
                 <span className="h-[1px] inline-block bg-basecolor w-[10%] mr-[15px]"></span>
                 Accomplished skills
               </span>
-              <h5 className="text-darkgray font-medium font-serif block mb-[25px]">We are the agency behind the design</h5>
-              <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since.</p>
+              <h5 className="text-darkgray font-medium font-serif block mb-[25px]">I am the analyst behind the insights</h5>
+              <p>With 5 years of experience in data analytics and business intelligence, I help organizations make data-driven decisions through comprehensive analysis and visualization.</p>
             </Col>
             <Col lg={{ span: 5, offset: 1 }} className="mb-[30px]">
               <ProgressBar
@@ -425,7 +425,7 @@ const About = (props) => {
               <span className="w-full h-[1px] inline-block align-middle bg-basecolor"></span>
             </Col>
             <Col lg={7} md={6} sm={8} className="text-left sm:text-center sm:mb-[30px]">
-              <span className="text-xlg font-serif text-darkgray lg:text-lg md:leading-[26px]">We create digital ideas that are <span className="font-semibold">bigger, braver and better.</span></span>
+              <span className="text-xlg font-serif text-darkgray lg:text-lg md:leading-[26px]">I create data solutions that are <span className="font-semibold">insightful, actionable and impactful.</span></span>
             </Col>
             <Col lg={3} md={4} className="sm:justify-center sm:flex">
               <Buttons ariaLabel="button" to="/portfolio/portfolio-colorful-metro" className="mx-[10px] rounded-none font-medium font-serif uppercase bg-[#fff] hover:text-white" themeColor="#000" size="lg" color="#000" icon="fas fa-arrow-right right-icon" iconPosition="after" title="Explore portfolio" />
@@ -478,21 +478,21 @@ const About = (props) => {
             <Col lg={7} xl={{ span: 6, offset: 1 }} className="text-center md:text-start">
               <Row>
                 <Col md={{ span: 9, offset: 3 }} >
-                  <h5 className="font-serif mb-12 font-medium text-darkgray lg:text-start sm:text-center xs:w-full xs:m-[0_auto] xs:mb-12">A smiling story <span className="font-semibold  underline underline-offset-8">about me</span></h5>
+                  <h5 className="font-serif mb-12 font-medium text-darkgray lg:text-start sm:text-center xs:w-full xs:m-[0_auto] xs:mb-12">My professional <span className="font-semibold  underline underline-offset-8">journey</span></h5>
                 </Col>
               </Row>
               <Row className="text-right">
                 <Col md={3} className="font-serif text-darkgray sm:text-center xs:mb-[5px]">about me</Col>
-                <Col md={9} className="mb-[2.5rem] text-left sm:text-center">Hi there, I am a Brian Wilson creative developer and designer, I enjoy building beautiful and thoughtful experiences. I like to mix code surprising visuals and pleasing interactions.
+                <Col md={9} className="mb-[2.5rem] text-left sm:text-center">Hi there, I am Victor Munene, a Senior Data Analyst with Microsoft Certification. I enjoy transforming complex data into clear, actionable insights that drive business decisions.
                   <div className="w-full h-[1px] bg-darkgray mt-[2.5rem] opacity-10"></div>
                 </Col>
-                <Col md={3} className="font-serif text-darkgray sm:text-center xs:mb-[5px]">current job</Col>
-                <Col md={9} className=" mb-[2.5rem] text-left sm:text-center">Currently working with good people and pushing <a aria-label="envoto" className="text-darkgray underline" rel="noreferrer" href="https://envato.com" target="_blank">envato studio</a> in beautiful King Street, Melbourne, Australia.
+                <Col md={3} className="font-serif text-darkgray sm:text-center xs:mb-[5px]">location</Col>
+                <Col md={9} className=" mb-[2.5rem] text-left sm:text-center">Based in Nairobi, Kenya. Available for remote work and on-site consultations. Contact: 0796436513 / 0799883309 | Email: Princevick361@gmail.com
                   <div className="w-full h-[1px] bg-darkgray mt-[2.5rem] opacity-10"></div>
 
                 </Col>
                 <Col md={3} className="font-serif text-darkgray sm:text-center xs:mb-[5px]">expertise</Col>
-                <Col md={9} className="text-left sm:text-center">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since.</Col>
+                <Col md={9} className="text-left sm:text-center">Data Analytics, Business Intelligence, Dashboard Development, Power BI, Tableau, SQL, Excel, Data Modeling, BC Central, Dynamics Navision, Power BI Service Configurations.</Col>
               </Row>
             </Col>
           </Row>

@@ -149,7 +149,7 @@ const Home = (props) => {
                     <Col className="col-12 text-left none md:block sm:hidden px-0">
                       <div className="font-serif mt-[50px]">
                         <span className="mb-[10px] font-light text-xlg inline-block">Let's work together?</span>
-                        <h2 className="heading-6 mb-0"><a aria-label="gmail" href="mailto:info@domain.com" className="text-[#ffeb04] border-b border-[#ffeb04] hover:text-white hover:border-white">info@domain.com</a></h2>
+                        <h2 className="heading-6 mb-0"><a aria-label="gmail" href="mailto:Princevick361@gmail.com" className="text-[#ffeb04] border-b border-[#ffeb04] hover:text-white hover:border-white">Princevick361@gmail.com</a></h2>
                       </div>
                     </Col>
                   </Row>
@@ -166,14 +166,14 @@ const Home = (props) => {
         <Parallax className="lg-no-parallax bg-cover absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh] sm:h-[100vh] md:h-[650px] !bg-[50%_0] lg:bg-[right_-230px_center] md:bg-right sm:top-0 sm:bg-[right_-350px_center] landscape:bg-right" translateY={[-20, 20]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1080)` }}></Parallax>
         <Container>
           <Row className="full-screen md:h-[520px] sm:h-[100vh]">
-            <Col xl={5} md={5} className="relative flex flex-col justify-center">
-              <h2 className="font-serif font-light -tracking-[2px] text-darkgray uppercase mb-[15px]">Hello, I am</h2>
+            <Col xl={7} lg={8} md={9} sm={12} className="relative flex flex-col justify-center">
+              <h2 className="font-serif font-light -tracking-[1px] text-darkgray uppercase mb-[15px]">Hello, I am</h2>
               <div className="font-serif cd-headline push">
                 <h3 className="heading-5 mb-0 text-darkgray font-serif">
                   <TextAnime
                     color="#232323"
                     duration={3000}
-                    className="font-bold text-darkgray uppercase text-[100px] leading-[95px] -tracking-[5px] sm:-tracking-[.5px] lg:text-[90px] lg:leading-[90px] md:text-[70px] md:leading-[65px] sm:text-[45px] sm:leading-[43px]"
+                    className="font-bold text-darkgray uppercase text-[60px] leading-[65px] -tracking-[2px] lg:text-[55px] lg:leading-[60px] md:text-[48px] md:leading-[50px] sm:text-[36px] sm:leading-[38px] xs:text-[30px] xs:leading-[32px]"
                     animation="push"
                     data={["Victor", "Victor Munene"]}
                   />
@@ -182,7 +182,7 @@ const Home = (props) => {
                   <TextAnime
                     color="#232323"
                     duration={3000}
-                    className="font-bold text-darkgray uppercase text-[100px] leading-[95px] -tracking-[5px] sm:-tracking-[.5px] lg:text-[90px] lg:leading-[90px] md:text-[70px] md:leading-[65px] sm:text-[45px] sm:leading-[43px]"
+                    className="font-bold text-darkgray uppercase text-[60px] leading-[65px] -tracking-[2px] lg:text-[55px] lg:leading-[60px] md:text-[48px] md:leading-[50px] sm:text-[36px] sm:leading-[38px] xs:text-[30px] xs:leading-[32px]"
                     animation="push"
                     data={["Senior Data Analyst", "Microsoft Certified"]}
                   />

@@ -1,9 +1,9 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Contact form server for Victor Munene Portfolio",
   "main": "mail.js",
-  "homepage": "https://lithoreact.themezaa.com/api/",
+  "homepage": "https://victormunene.com/api/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "nodemon mail.js"

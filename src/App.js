@@ -8,27 +8,9 @@ import { AnimatePresence } from "framer-motion";
 // Context
 import GlobalContext from "./Context/Context";
 
-// Components
-import ScrollToTopButton from "./Components/ScrollToTop";
-
-// Main Pages
-const Home = lazy(() => import("./Pages/Home"));
-
-// Portfolio Pages
-const PortfolioLayout = lazy(() => import("./Pages/PortfolioLayout"));
-const PortfolioGrid = lazy(() => import("./Pages/PortfolioGrid"));
-const Project01 = lazy(() => import("./Pages/Project01"));
-const Project02 = lazy(() => import("./Pages/Project02"));
-const Project03 = lazy(() => import("./Pages/Project03"));
-const Project04 = lazy(() => import("./Pages/Project04"));
-const Project05 = lazy(() => import("./Pages/Project05"));
-
-// About, Services, Contact Pages
-const About = lazy(() => import("./Pages/About"));
-const Services = lazy(() => import("./Pages/Services"));
-const Contact = lazy(() => import("./Pages/Contact"));
-
-// System Pages
+// Main Pages - Lazy loaded
+const HomeNew = lazy(() => import("./Pages/HomeNew"));
+const CaseStudy = lazy(() => import("./Pages/CaseStudy"));
 const NotFoundPage = lazy(() => import("./Pages/404"));
 const Privacy = lazy(() => import("./Pages/Privacy"));
 
@@ -95,104 +77,34 @@ function App() {
       }}
     >
       <div className="App" style={{ "--header-height": `${headerHeight}px` }}>
-        {
-          <main style={{ marginTop: headerHeight, marginBottom: footerHeight }}>
-            <ScrollToTopButton />
-            <AnimatePresence mode="wait">
-              <Suspense fallback={<></>}>
-                <Routes>
-                  {/* Home */}
-                  <Route
-                    path="/"
-                    element={
-                      <Home style={{ "--base-color": "#ffeb04" }} />
-                    }
-                  />
+        <main style={{ marginTop: 0, marginBottom: footerHeight }}>
+          <AnimatePresence mode="wait">
+            <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
+              <Routes>
+                {/* Home - Single Page Portfolio */}
+                <Route
+                  path="/"
+                  element={<HomeNew style={{ "--base-color": "#0891b2" }} />}
+                />
 
-                  {/* About */}
-                  <Route
-                    path="/page/about-me"
-                    element={
-                      <About style={{ "--base-color": "#0038e3" }} />
-                    }
-                  />
+                {/* Case Study Pages */}
+                <Route
+                  path="/project/:slug"
+                  element={<CaseStudy style={{ "--base-color": "#0891b2" }} />}
+                />
 
-                  {/* Services */}
-                  <Route
-                    path="/page/our-services"
-                    element={
-                      <Services style={{ "--base-color": "#0038e3" }} />
-                    }
-                  />
+                {/* Privacy */}
+                <Route
+                  path="/privacy"
+                  element={<Privacy style={{ "--base-color": "#0038e3" }} />}
+                />
 
-                  {/* Portfolio */}
-                  <Route
-                    path="portfolio"
-                    element={
-                      <PortfolioLayout style={{ "--base-color": "#0038e3" }} />
-                    }
-                  >
-                    <Route
-                      path="portfolio-colorful-metro"
-                      element={
-                        <PortfolioGrid style={{ "--base-color": "#fff" }} />
-                      }
-                    />
-                  </Route>
-
-                  {/* Single Project Pages */}
-                  <Route
-                    path="/portfolio/single-project-page-01"
-                    element={
-                      <Project01 style={{ "--base-color": "#0038e3" }} />
-                    }
-                  />
-                  <Route
-                    path="/portfolio/single-project-page-02"
-                    element={
-                      <Project02 style={{ "--base-color": "#0038e3" }} />
-                    }
-                  />
-                  <Route
-                    path="/portfolio/single-project-page-03"
-                    element={
-                      <Project03 style={{ "--base-color": "#0038e3" }} />
-                    }
-                  />
-                  <Route
-                    path="/portfolio/single-project-page-04"
-                    element={
-                      <Project04 style={{ "--base-color": "#fd961e" }} />
-                    }
-                  />
-                  <Route
-                    path="/portfolio/single-project-page-05"
-                    element={
-                      <Project05 style={{ "--base-color": "#0038e3" }} />
-                    }
-                  />
-
-                  {/* Contact */}
-                  <Route
-                    path="/page/contact-modern"
-                    element={
-                      <Contact style={{ "--base-color": "#0038e3" }} />
-                    }
-                  />
-
-                  {/* Privacy */}
-                  <Route
-                    path="/privacy"
-                    element={<Privacy style={{ "--base-color": "#0038e3" }} />}
-                  />
-
-                  {/* 404 - Catch all */}
-                  <Route path="*" element={<NotFoundPage />} />
-                </Routes>
-              </Suspense>
-            </AnimatePresence>
-          </main>
-        }
+                {/* 404 - Catch all */}
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </Suspense>
+          </AnimatePresence>
+        </main>
       </div>
     </GlobalContext.Provider>
   );

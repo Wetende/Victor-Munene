@@ -134,8 +134,8 @@ const Services = (props) => {
           <Row className="items-center justify-center">
             <Col lg={5} md={9} className="mb-[10px] md:mb-28">
               <span className="font-serif mb-[20px] text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e] inline-block uppercase font-medium tracking-[1px]">Experience agency</span>
-              <h4 className="font-serif font-semibold text-darkgray w-[95%]">We help our clients build value digital web solutions</h4>
-              <p className="w-[80%] mb-[25px] lg:w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua printing typesetting.</p>
+              <h4 className="font-serif font-semibold text-darkgray w-[95%]">I help clients transform data into valuable business insights</h4>
+              <p className="w-[80%] mb-[25px] lg:w-[95%]">With 5 years of experience in data analytics and business intelligence, I provide comprehensive solutions using Power BI, Tableau, SQL, and advanced analytics tools.</p>
               <ScrollTo to="services" offset={0} delay={0} spy={true} smooth={true} duration={800}>
                 <Buttons className="btn-fill mt-[15px] font-medium font-serif uppercase rounded md:mb-[15px]" icon="feather-arrow-right" iconPosition="after" themeColor="#232323" color="#fff" size="md" title="Our services" />
               </ScrollTo>
