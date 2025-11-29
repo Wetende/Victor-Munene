@@ -16,7 +16,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center bg-white"
+      className="relative min-h-screen flex items-center bg-white pt-24"
     >
       <Container>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">

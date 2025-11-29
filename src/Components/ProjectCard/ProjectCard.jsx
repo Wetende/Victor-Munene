@@ -3,14 +3,11 @@ import { Link } from 'react-router-dom';
 import { m } from 'framer-motion';
 
 const ProjectCard = ({ project }) => {
-  const [isHovered, setIsHovered] = useState(false);
   const { slug, title, category, description, thumbnail } = project;
 
   return (
     <m.div
       className="relative overflow-hidden rounded-lg group cursor-default"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -21,17 +18,13 @@ const ProjectCard = ({ project }) => {
         <img
           src={thumbnail || 'https://via.placeholder.com/800x800'}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover"
           loading="lazy"
         />
       </div>
 
-      {/* Overlay */}
-      <div
-        className={`absolute inset-0 bg-black/70 flex flex-col justify-end p-6 transition-opacity duration-300 ${
-          isHovered ? 'opacity-100' : 'opacity-0'
-        }`}
-      >
+      {/* Overlay - Always Visible */}
+      <div className="absolute inset-0 bg-black/70 flex flex-col justify-end p-6">
         {/* Category Tags */}
         <div className="flex flex-wrap gap-2 mb-3">
           {category.map((cat, index) => (

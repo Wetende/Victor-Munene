@@ -12,18 +12,8 @@ export const navItems = [
 export const socialLinks = [
   {
     platform: 'linkedin',
-    url: 'https://www.linkedin.com/in/victormunene',
+    url: 'https://www.linkedin.com/in/victor-munene-359137225/',
     icon: 'fab fa-linkedin-in'
-  },
-  {
-    platform: 'github',
-    url: 'https://github.com/victormunene',
-    icon: 'fab fa-github'
-  },
-  {
-    platform: 'twitter',
-    url: 'https://twitter.com/victormunene',
-    icon: 'fab fa-twitter'
   }
 ];
 
