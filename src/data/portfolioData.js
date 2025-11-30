@@ -13,7 +13,7 @@ export const socialLinks = [
   {
     platform: 'linkedin',
     url: 'https://www.linkedin.com/in/victor-munene-359137225/',
-    icon: 'fab fa-linkedin-in'
+    icon: 'fas fa-link'
   }
 ];
 

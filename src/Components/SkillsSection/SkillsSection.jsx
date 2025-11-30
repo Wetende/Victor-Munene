@@ -11,11 +11,11 @@ const SkillCard = ({ icon, title, description, delay = 0 }) => (
     viewport={{ once: true }}
     transition={{ duration: 0.4, delay }}
   >
-    <div className="h-full p-6 rounded-xl bg-[#1a1a2e] border border-gray-800 hover:border-cyan-500/50 transition-all duration-300">
-      <div className="text-cyan-400 text-4xl lg:text-5xl mb-6">
+    <div className="h-full p-6 rounded-xl bg-[#1a1a2e] border border-gray-800 hover:border-cyan-500/50 hover:-translate-y-2 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 group cursor-default">
+      <div className="text-cyan-400 text-4xl lg:text-5xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 inline-block">
         <i className={icon}></i>
       </div>
-      <h3 className="font-serif font-semibold text-white text-lg mb-2">
+      <h3 className="font-serif font-semibold text-white text-lg mb-2 group-hover:text-cyan-400 transition-colors">
         {title}
       </h3>
       <p className="font-serif text-sm text-gray-400 leading-relaxed">

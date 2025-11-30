@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
   return (
     <Link to={`/project/${slug}`} className="block">
       <m.div
-        className="overflow-hidden rounded-2xl bg-[#1a1a1a] group cursor-pointer h-full"
+        className="overflow-hidden rounded-2xl bg-[#1a1a1a] group cursor-pointer h-full hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
