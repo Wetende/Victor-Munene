@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { m } from 'framer-motion';
 import SocialIcons from '../SocialIcon/SocialIcons';
 import { heroData } from '../../data/portfolioData';
@@ -19,12 +19,12 @@ const HeroSection = () => {
       className="relative min-h-screen flex items-center bg-white pt-24"
     >
       <Container>
-        <div className="flex flex-col md:flex-row gap-10 lg:gap-16 items-center">
+        <Row className="align-items-center">
           {/* Left Column - Content */}
-          <m.div
-            className="w-full md:w-1/2"
-            {...fadeIn}
-          >
+          <Col lg={6} className="mb-5 lg:mb-0">
+            <m.div
+              {...fadeIn}
+            >
             <p className="font-serif text-sm uppercase tracking-widest text-gray-600 mb-4">
               Hello, I am
             </p>
@@ -53,12 +53,14 @@ const HeroSection = () => {
               />
             </div>
           </m.div>
+          </Col>
 
           {/* Right Column - Analytics card */}
-          <m.div
-            className="w-full md:w-1/2 mt-10 md:mt-0"
-            {...fadeIn}
-          >
+          <Col lg={6}>
+            <m.div
+              className="flex items-center justify-center lg:justify-end"
+              {...fadeIn}
+            >
             <div className="relative w-full max-w-md">
               {/* Soft glow behind the card */}
               <div className="pointer-events-none absolute -top-10 -right-10 h-40 w-40 rounded-full bg-cyan-500/20 blur-3xl" />
@@ -100,8 +102,9 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-          </m.div>
-        </div>
+            </m.div>
+          </Col>
+        </Row>
       </Container>
     </section>
   );

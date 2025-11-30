@@ -12,7 +12,7 @@ const SkillCard = ({ icon, title, description, delay = 0 }) => (
     transition={{ duration: 0.4, delay }}
   >
     <div className="h-full p-6 rounded-xl bg-[#1a1a2e] border border-gray-800 hover:border-cyan-500/50 transition-all duration-300">
-      <div className="text-cyan-400 text-3xl mb-4">
+      <div className="text-cyan-400 text-4xl lg:text-5xl mb-6">
         <i className={icon}></i>
       </div>
       <h3 className="font-serif font-semibold text-white text-lg mb-2">
