@@ -2,73 +2,59 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { m } from 'framer-motion';
 import { skillsData } from '../../data/portfolioData';
-import { fadeIn } from '../../Functions/GlobalAnimations';
 
-const SkillBar = ({ name, level, delay = 0 }) => (
+const SkillCard = ({ icon, title, description, delay = 0 }) => (
   <m.div
-    className="mb-6"
-    initial={{ opacity: 0, x: -20 }}
-    whileInView={{ opacity: 1, x: 0 }}
+    className="h-full"
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.4, delay }}
   >
-    <div className="flex justify-between mb-2">
-      <span className="font-serif font-medium text-darkgray">{name}</span>
-      <span className="font-serif text-gray-500">{level}%</span>
-    </div>
-    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-      <m.div
-        className="h-full bg-cyan-600 rounded-full"
-        initial={{ width: 0 }}
-        whileInView={{ width: `${level}%` }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: delay + 0.2 }}
-      />
+    <div className="h-full p-6 rounded-xl bg-[#1a1a2e] border border-gray-800 hover:border-cyan-500/50 transition-all duration-300">
+      <div className="text-cyan-400 text-3xl mb-4">
+        <i className={icon}></i>
+      </div>
+      <h3 className="font-serif font-semibold text-white text-lg mb-2">
+        {title}
+      </h3>
+      <p className="font-serif text-sm text-gray-400 leading-relaxed">
+        {description}
+      </p>
     </div>
   </m.div>
 );
 
 const SkillsSection = () => {
-  // Flatten skills and take max 6
-  const allSkills = skillsData.flatMap(group => 
-    group.items.map(skill => ({ ...skill, category: group.category }))
-  ).slice(0, 6);
-
   return (
-    <section id="skills" className="py-24 md:py-32 bg-cyan-50">
+    <section id="skills" className="py-24 md:py-32 bg-[#0f0f1a]">
       <Container>
-        <Row className="items-center">
-          {/* Left Column - Header */}
-          <Col lg={5} className="mb-12 lg:mb-0">
-            <m.div {...fadeIn}>
-              <p className="font-serif text-sm uppercase tracking-widest text-darkgray/70 mb-4">
-                Expertise
-              </p>
-              <h2 className="font-serif font-bold text-3xl md:text-4xl text-darkgray mb-6 leading-tight">
-                Technical Skills &
-                <br />
-                Competencies
-              </h2>
-              <p className="font-serif text-lg text-darkgray/80 leading-relaxed">
-                Providing high-quality data analytics and business intelligence
-                solutions including Power BI, Tableau, and enterprise platforms.
-              </p>
-            </m.div>
-          </Col>
+        {/* Section Header */}
+        <m.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="font-serif font-bold text-3xl md:text-4xl text-white mb-2">
+            My <span className="text-cyan-400">Skills</span>
+          </h2>
+          <div className="w-16 h-1 bg-cyan-400 mx-auto mt-4 rounded-full"></div>
+        </m.div>
 
-          {/* Right Column - Skills */}
-          <Col lg={{ span: 6, offset: 1 }}>
-            <div>
-              {allSkills.map((skill, index) => (
-                <SkillBar
-                  key={skill.name}
-                  name={skill.name}
-                  level={skill.level}
-                  delay={index * 0.1}
-                />
-              ))}
-            </div>
-          </Col>
+        {/* Skills Grid - 3 cards per row, 2 rows */}
+        <Row className="g-4 justify-content-center">
+          {skillsData.map((skill, index) => (
+            <Col key={skill.title} xs={6} md={4}>
+              <SkillCard
+                icon={skill.icon}
+                title={skill.title}
+                description={skill.description}
+                delay={index * 0.1}
+              />
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

@@ -41,28 +41,37 @@ export const aboutData = {
 };
 
 
-// Skills Data (max 6 total)
+// Skills Data (card-based layout)
 export const skillsData = [
   {
-    category: 'BI Tools',
-    items: [
-      { name: 'Power BI', level: 95 },
-      { name: 'Tableau', level: 85 }
-    ]
+    icon: 'fas fa-chart-bar',
+    title: 'Power BI',
+    description: 'Interactive dashboards and business intelligence reporting solutions.'
   },
   {
-    category: 'Data Skills',
-    items: [
-      { name: 'SQL', level: 90 },
-      { name: 'Data Modeling', level: 88 }
-    ]
+    icon: 'fas fa-chart-pie',
+    title: 'Tableau',
+    description: 'Data visualization and analytics platform expertise.'
   },
   {
-    category: 'Platforms',
-    items: [
-      { name: 'BC Central', level: 80 },
-      { name: 'Dynamics Navision', level: 75 }
-    ]
+    icon: 'fas fa-database',
+    title: 'SQL',
+    description: 'Complex queries, data extraction, and database management.'
+  },
+  {
+    icon: 'fas fa-project-diagram',
+    title: 'Data Modeling',
+    description: 'Designing efficient data structures and relationships.'
+  },
+  {
+    icon: 'fas fa-cogs',
+    title: 'BC Central',
+    description: 'Business Central integration and reporting solutions.'
+  },
+  {
+    icon: 'fas fa-chart-line',
+    title: 'Analytics',
+    description: 'Transforming raw data into actionable business insights.'
   }
 ];
 

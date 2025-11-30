@@ -10,17 +10,17 @@ const ProjectsSection = () => {
   const displayedProjects = projectsData.slice(0, 6);
 
   return (
-    <section id="work" className="py-24 md:py-32 bg-gray-50">
+    <section id="work" className="py-24 md:py-32 bg-[#0d0d0d]">
       <Container>
         {/* Section Header */}
-        <m.div className="text-center mb-16" {...fadeIn}>
-          <p className="font-serif text-sm uppercase tracking-widest text-cyan-600 mb-4">
+        <m.div className="text-center mb-12" {...fadeIn}>
+          <p className="font-serif text-xs md:text-sm uppercase tracking-widest text-cyan-500 mb-3">
             Portfolio
           </p>
-          <h2 className="font-serif font-bold text-3xl md:text-4xl text-darkgray mb-4">
+          <h2 className="font-serif font-bold text-2xl md:text-3xl text-white mb-3">
             Featured Projects
           </h2>
-          <p className="font-serif text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="font-serif text-sm md:text-base text-gray-400 max-w-2xl mx-auto">
             A selection of data analytics and business intelligence projects
             showcasing real-world business impact.
           </p>

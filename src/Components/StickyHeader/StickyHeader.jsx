@@ -36,12 +36,12 @@ const StickyHeader = ({ activeSection, onNavClick }) => {
             className="cursor-pointer"
           >
             <span className="font-serif font-bold text-2xl text-darkgray">
-              Victor
+              Portfolio
             </span>
           </ScrollLink>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="flex md:hidden items-center gap-8">
             {navItems.map((item) => (
               <ScrollLink
                 key={item.id}
@@ -64,7 +64,7 @@ const StickyHeader = ({ activeSection, onNavClick }) => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2"
+            className="hidden md:flex flex-col gap-1.5 p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -76,7 +76,7 @@ const StickyHeader = ({ activeSection, onNavClick }) => {
 
         {/* Mobile Navigation */}
         <nav
-          className={`md:hidden overflow-hidden transition-all duration-300 ${
+          className={`hidden md:block overflow-hidden transition-all duration-300 ${
             isMobileMenuOpen ? 'max-h-96 mt-4' : 'max-h-0'
           }`}
         >
