@@ -271,7 +271,7 @@ export const projectsData = [
 export const contactData = {
   email: 'Princevick361@gmail.com',
   linkedInUrl: 'https://www.linkedin.com/in/victormunene',
-  ctaText: "Let's work together?"
+  ctaText: "Let's work ?"
 };
 
 // Footer Data

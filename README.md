@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+## Victor Munene Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern single-page portfolio built with React (Create React App + CRACO), Tailwind CSS, and Sass.
 
-## Available Scripts
+### Getting started
 
-In the project directory, you can run:
+1. **Clone the repository**
 
-### `npm start`
+   ```bash
+   git clone <your-repo-url>
+   cd litho
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Install dependencies**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   Make sure you have **Node.js** (recommended v18 or later) and **npm** installed, then run:
 
-### `npm test`
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run the app on your computer
 
-### `npm run build`
+- **Development server**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```bash
+  npm start
+  ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  This starts the React dev server (Create React App) and opens the site at `http://localhost:3000`.  
+  The page will auto‑reload when you make changes in `src/`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Build for production
 
-### `npm run eject`
+- **Create an optimized production build**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  ```bash
+  npm run build
+  ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  This uses CRACO under the hood and outputs static files into the `build/` folder, ready to be deployed to any static hosting service.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Run tests (optional)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Jest / React Testing Library in watch mode**
 
-## Learn More
+  ```bash
+  npm test
+  ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Styling workflow (optional)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you are editing Tailwind or Sass source files, you can run the style build pipeline in watch mode:
 
-### Code Splitting
+```bash
+npm run scss
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This script watches the Sass files under `src/Assets/scss` and rebuilds the generated CSS (including Tailwind styles) into `src/Assets/css`.
 
-### Analyzing the Bundle Size
+### Available npm scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **start**: runs the development server.
+- **build**: creates an optimized production build in `build/`.
+- **test**: runs the test suite in watch mode.
+- **scss**: runs the combined Sass + Tailwind CSS watchers for live style rebuilding.
