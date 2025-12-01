@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Victor-Munene/static/css/main.c1699ef3.css",
-    "main.js": "/Victor-Munene/static/js/main.86bacf1e.js",
+    "main.js": "/Victor-Munene/static/js/main.9815994f.js",
     "static/css/343.6470fbfa.chunk.css": "/Victor-Munene/static/css/343.6470fbfa.chunk.css",
     "static/js/343.3f7c0efd.chunk.js": "/Victor-Munene/static/js/343.3f7c0efd.chunk.js",
     "static/css/687.347ed663.chunk.css": "/Victor-Munene/static/css/687.347ed663.chunk.css",
@@ -48,7 +48,7 @@
     "static/media/fa-v4compatibility.woff2": "/Victor-Munene/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "index.html": "/Victor-Munene/index.html",
     "main.c1699ef3.css.map": "/Victor-Munene/static/css/main.c1699ef3.css.map",
-    "main.86bacf1e.js.map": "/Victor-Munene/static/js/main.86bacf1e.js.map",
+    "main.9815994f.js.map": "/Victor-Munene/static/js/main.9815994f.js.map",
     "343.6470fbfa.chunk.css.map": "/Victor-Munene/static/css/343.6470fbfa.chunk.css.map",
     "343.3f7c0efd.chunk.js.map": "/Victor-Munene/static/js/343.3f7c0efd.chunk.js.map",
     "687.347ed663.chunk.css.map": "/Victor-Munene/static/css/687.347ed663.chunk.css.map",
@@ -64,6 +64,6 @@
   },
   "entrypoints": [
     "static/css/main.c1699ef3.css",
-    "static/js/main.86bacf1e.js"
+    "static/js/main.9815994f.js"
   ]
 }
