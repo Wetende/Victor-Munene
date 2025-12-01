@@ -35,9 +35,9 @@ const Privacy = (props) => {
                     <Col className="col-5 col-lg-2 me-auto ps-md-0">
                         <Link aria-label="header logo" className="flex items-center" to="/">
                             <Navbar.Brand className="inline-block p-0 m-0">
-                                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-                                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-                                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
+                                <img className="default-logo" width="111" height="36" loading="lazy" src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-fast-blue-black.webp`} data-rjs={`${process.env.PUBLIC_URL}/assets/img/webp/logo-fast-blue-black@2x.webp`} alt='logo' />
+                                <img className="alt-logo" width="111" height="36" loading="lazy" src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-fast-blue-black.webp`} data-rjs={`${process.env.PUBLIC_URL}/assets/img/webp/logo-fast-blue-black@2x.webp`} alt='logo' />
+                                <img className="mobile-logo" width="111" height="36" loading="lazy" src={`${process.env.PUBLIC_URL}/assets/img/webp/logo-fast-blue-black.webp`} data-rjs={`${process.env.PUBLIC_URL}/assets/img/webp/logo-fast-blue-black@2x.webp`} alt='logo' />
                             </Navbar.Brand>
                         </Link>
                     </Col>

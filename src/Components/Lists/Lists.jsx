@@ -1,8 +1,5 @@
 import React, { memo } from 'react'
 
-// Data
-import { ListData01 } from './ListsData'
-
 // Libraries
 import { m } from 'framer-motion';
 import { PropTypes } from "prop-types";
@@ -33,7 +30,7 @@ const Lists = (props) => {
 }
 
 Lists.defaultProps = {
-    data: ListData01,
+    data: [],
     theme: "list-style-01",
     animationDelay: 0.1
 }

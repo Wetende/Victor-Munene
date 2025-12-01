@@ -90,7 +90,7 @@ const HeroSection = () => {
                 {/* Analytics image */}
                 <div className="overflow-hidden rounded-2xl border border-slate-700/60 bg-black">
                   <img
-                    src="/assets/img/data.png"
+                    src={`${process.env.PUBLIC_URL}/assets/img/data.png`}
                     alt="Data analytics dashboard"
                     className="h-auto w-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
                   />

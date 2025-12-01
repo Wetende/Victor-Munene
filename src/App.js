@@ -11,7 +11,6 @@ import GlobalContext from "./Context/Context";
 // Main Pages - Lazy loaded
 const HomeNew = lazy(() => import("./Pages/HomeNew"));
 const CaseStudy = lazy(() => import("./Pages/CaseStudy"));
-const NotFoundPage = lazy(() => import("./Pages/404"));
 const Privacy = lazy(() => import("./Pages/Privacy"));
 
 function App() {
@@ -98,9 +97,6 @@ function App() {
                   path="/privacy"
                   element={<Privacy style={{ "--base-color": "#0891b2" }} />}
                 />
-
-                {/* 404 - Catch all */}
-                <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </Suspense>
           </AnimatePresence>

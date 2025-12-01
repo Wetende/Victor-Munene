@@ -2,7 +2,7 @@
   "name": "victor-portfolio",
   "version": "1.1.0",
   "private": true,
-  "homepage": "https://victormunene.com",
+  "homepage": "https://wetende.github.io/Victor-Munene",
   "exports": "./index.js",
   "dependencies": {
     "atropos": "^2.0.2",

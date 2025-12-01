@@ -7,11 +7,7 @@ import { PropTypes } from "prop-types";
 
 // Components
 import SocialIcons from '../SocialIcon/SocialIcons';
-import FooterMenu, { Footer } from './Footer';
-import StaticInstagram from '../Instagram/StaticInstagram';
-
-// Data
-import FooterData from './FooterData';
+import { Footer } from './Footer';
 
 const iconData = [
     {
@@ -42,22 +38,9 @@ const FooterStyle01 = (props) => {
             <div className="py-[5%] lg:py-[95px] md:py-[50px]">
                 <Container>
                     <Row>
-                        <FooterMenu data={FooterData.slice(0, 2)} lg={3} sm={6} className="xl:px-[15px] md:mb-[40px] xs:mb-[25px]" titleClass="capitalize" />
-                        <Col lg={3} sm={6} className="xs:mb-[25px]">
-                            <span className="mb-[20px] font-serif block font-medium text-themecolor xs:mb-[10px]">Get in touch</span>
-                            <p className="w-[85%] mb-[15px]">27 Eden walk eden centre, Orchard view, Paris, France</p>
-                            <div><i className="feather-phone-call text-sm mr-[10px] text-themecolor"></i>+1 234 567 8910</div>
-                            <div><i className="feather-mail text-sm mr-[10px] text-themecolor"></i><a aria-label="mail" href="mailTo:info@yourdomain.com">info@yourdomain.com</a></div>
-                        </Col>
-                        <Col lg={3} sm={6}>
-                            <span className="mb-[20px] font-medium font-serif text-themecolor block xs:mb-[20px]">Follow us on Instagram</span>
-                            <div className="w-full inline-block">
-                                <StaticInstagram total_posts={3} />
-                                <a aria-label="link" rel="noreferrer" href="https://www.instagram.com/" target="_blank" className="flex justify-start text-slateblue font-medium text-xs font-serif uppercase mt-[20px] items-center hover:text-white">
-                                    <i className="fab fa-instagram text-lg mr-[10px] text-gradient bg-gradient-to-r from-[#ff85a6] to-[#b783ff]"></i>
-                                    <span className="inline-block hover:text-white">Follow instagram</span>
-                                </a>
-                            </div>
+                        <Col className="text-center">
+                            <p className="text-lg mb-4">Victor Munene - Senior Data Analyst</p>
+                            <p>Transforming data into actionable business insights</p>
                         </Col>
                     </Row>
                 </Container>
@@ -84,9 +67,9 @@ const FooterStyle01 = (props) => {
 }
 
 FooterStyle01.defaultProps = {
-    data: FooterData,
+    data: [],
     className: "bg-darkgray text-[#828282]",
-    logo: "/assets/img/webp/logo-white.webp",
+    logo: `${process.env.PUBLIC_URL}/assets/img/webp/logo-white.webp`,
     theme: "light"
 }
 

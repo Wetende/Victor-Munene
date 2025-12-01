@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <LazyMotion features={domMax}>
     <ParallaxProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/Victor-Munene" future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <App />
       </BrowserRouter>
     </ParallaxProvider>

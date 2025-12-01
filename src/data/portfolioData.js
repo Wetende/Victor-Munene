@@ -13,7 +13,7 @@ export const socialLinks = [
   {
     platform: 'linkedin',
     url: 'https://www.linkedin.com/in/victor-munene-359137225/',
-    icon: 'fas fa-link'
+    icon: 'fab fa-linkedin'
   }
 ];
 
@@ -23,7 +23,7 @@ export const heroData = {
   title: 'Senior Data Analyst',
   tagline: 'Transforming data into actionable business insights',
   socialLinks,
-  backgroundImage: '/assets/img/hero-bg.jpeg'
+  backgroundImage: `${process.env.PUBLIC_URL}/assets/img/hero-bg.jpeg`
 };
 
 // About Section Data
@@ -36,8 +36,8 @@ export const aboutData = {
     'Data Modeling',
     'Predictive Analytics'
   ],
-  photo: '/assets/img/victor-profile.webp',
-  backgroundImage: '/assets/img/about-bg.jpeg'
+  photo: `${process.env.PUBLIC_URL}/assets/img/victor-profile.webp`,
+  backgroundImage: `${process.env.PUBLIC_URL}/assets/img/about-bg.jpeg`
 };
 
 
@@ -83,7 +83,7 @@ export const projectsData = [
     title: 'Gaming Revenue Analysis',
     category: ['Power BI', 'Data Modeling'],
     description: 'Monthly revenue and payout analysis dashboard for gaming industry',
-    thumbnail: '/assets/img/projects/gaming-revenue.jpeg',
+    thumbnail: `${process.env.PUBLIC_URL}/assets/img/projects/gaming-revenue.jpeg`,
     caseStudy: {
       background: [
         'A gaming company needed comprehensive visibility into monthly revenue trends and payout percentages. The existing reporting system provided only basic summaries without the ability to identify seasonal patterns or anomalies.',
@@ -96,7 +96,7 @@ export const projectsData = [
       results: {
         description: 'The dashboard revealed clear seasonal patterns with peak revenues in May (14.4bn) and July (13.7bn). Payout analysis showed optimal ranges between 80-84%, enabling better margin management and operational decisions.',
         visualizations: [
-          { type: 'dashboard', src: '/assets/img/projects/gaming-revenue.jpeg', alt: 'Gaming revenue dashboard', caption: 'Monthly revenue and payout analysis' }
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/gaming-revenue.jpeg`, alt: 'Gaming revenue dashboard', caption: 'Monthly revenue and payout analysis' }
         ]
       },
       recommendations: [
@@ -113,7 +113,7 @@ export const projectsData = [
     title: 'Financial Status Breakdown',
     category: ['Power BI', 'Tableau'],
     description: 'Comprehensive financial analysis dashboard with multi-dimensional breakdowns',
-    thumbnail: '/assets/img/projects/financial-status-1.jpeg',
+    thumbnail: `${process.env.PUBLIC_URL}/assets/img/projects/financial-status-1.jpeg`,
     caseStudy: {
       background: [
         'A financial services company needed detailed visibility into their financial status across multiple dimensions. The existing reporting lacked the granularity needed for strategic decision-making.',
@@ -126,8 +126,8 @@ export const projectsData = [
       results: {
         description: 'Delivered multi-view financial dashboards providing instant visibility into financial status. Enabled data-driven decision making with real-time insights and improved financial planning accuracy.',
         visualizations: [
-          { type: 'dashboard', src: '/assets/img/projects/financial-status-1.jpeg', alt: 'Financial status overview', caption: 'Primary financial status dashboard' },
-          { type: 'dashboard', src: '/assets/img/projects/financial-status-2.jpeg', alt: 'Financial breakdown details', caption: 'Detailed financial breakdown analysis' }
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/financial-status-1.jpeg`, alt: 'Financial status overview', caption: 'Primary financial status dashboard' },
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/financial-status-2.jpeg`, alt: 'Financial breakdown details', caption: 'Detailed financial breakdown analysis' }
         ]
       },
       recommendations: [
@@ -144,7 +144,7 @@ export const projectsData = [
     title: 'Procurement Plan Report',
     category: ['Power BI', 'BC Central'],
     description: 'Comprehensive procurement budget tracking and actuals reporting system',
-    thumbnail: '/assets/img/projects/procurement plan.jpeg',
+    thumbnail: `${process.env.PUBLIC_URL}/assets/img/projects/procurement plan.jpeg`,
     caseStudy: {
       background: [
         'A large organization needed to track procurement budgets across multiple departments with real-time visibility into budget utilization, commitments, and actual spending.',
@@ -157,7 +157,7 @@ export const projectsData = [
       results: {
         description: 'Delivered a comprehensive procurement tracking system managing 2.9B+ in total budget across multiple departments. The system provides real-time visibility into budget utilization (2.2B actual spent, 170M commitments) with detailed transaction tracking and variance analysis.',
         visualizations: [
-          { type: 'dashboard', src: '/assets/img/projects/procurement plan.jpeg', alt: 'Procurement plan report', caption: 'Summarized procurement budget and actuals detail report' }
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/procurement plan.jpeg`, alt: 'Procurement plan report', caption: 'Summarized procurement budget and actuals detail report' }
         ]
       },
       recommendations: [
@@ -175,7 +175,7 @@ export const projectsData = [
     title: 'Performance Analysis Dashboard',
     category: ['Power BI', 'Data Modeling'],
     description: 'Comprehensive financial performance analysis with variance tracking and cost breakdown',
-    thumbnail: '/assets/img/projects/perfomance analysis.jpeg',
+    thumbnail: `${process.env.PUBLIC_URL}/assets/img/projects/perfomance analysis.jpeg`,
     caseStudy: {
       background: [
         'Saracen KE needed detailed visibility into financial performance across multiple time periods with variance analysis against budgets and prior periods.',
@@ -188,8 +188,8 @@ export const projectsData = [
       results: {
         description: 'Delivered real-time performance tracking showing YTD net actual of -526.0M against budget, with detailed line-item analysis across all expense categories. The cost breakdown dashboard revealed 1.33bn in direct costs, 389.82M in employment costs, and 1.94bn in administrative expenses, enabling data-driven cost optimization decisions.',
         visualizations: [
-          { type: 'dashboard', src: '/assets/img/projects/perfomance analysis.jpeg', alt: 'Performance analysis summary', caption: 'Net actual summary with variance analysis by line items' },
-          { type: 'dashboard', src: '/assets/img/projects/perfomance analysis1.jpeg', alt: 'Cost breakdown analysis', caption: 'Detailed cost breakdown with monthly direct costs trending' }
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/perfomance analysis.jpeg`, alt: 'Performance analysis summary', caption: 'Net actual summary with variance analysis by line items' },
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/perfomance analysis1.jpeg`, alt: 'Cost breakdown analysis', caption: 'Detailed cost breakdown with monthly direct costs trending' }
         ]
       },
       recommendations: [
@@ -207,7 +207,7 @@ export const projectsData = [
     title: 'Billings Analysis Dashboard',
     category: ['Power BI', 'Tableau'],
     description: 'Comprehensive billings tracking with customer analysis and media distribution insights',
-    thumbnail: '/assets/img/projects/billings.jpeg',
+    thumbnail: `${process.env.PUBLIC_URL}/assets/img/projects/billings.jpeg`,
     caseStudy: {
       background: [
         'Saracen KE needed real-time visibility into billings performance across multiple customers and media channels. The existing system lacked the ability to track period-over-period changes and identify trends.',
@@ -220,8 +220,8 @@ export const projectsData = [
       results: {
         description: 'Delivered comprehensive billings tracking showing YTD billings of 668.5M (+23.25% vs prior year). The dashboard revealed top customers like Udv Kenya Ltd (146.8M, 22% share) and Kenya Breweries Ltd (80.4M, 12% share). Media analysis showed Digital leading at 35.42%, followed by TV (27.19%) and Radio (20.41%). Monthly trending identified January as peak billing month at 307M.',
         visualizations: [
-          { type: 'dashboard', src: '/assets/img/projects/billings.jpeg', alt: 'Billings summary by customer', caption: 'YTD billings summary table by company with variance analysis' },
-          { type: 'dashboard', src: '/assets/img/projects/billings1.jpeg', alt: 'Billings trends and media distribution', caption: 'Monthly billings trend and media channel distribution analysis' }
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/billings.jpeg`, alt: 'Billings summary by customer', caption: 'YTD billings summary table by company with variance analysis' },
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/billings1.jpeg`, alt: 'Billings trends and media distribution', caption: 'Monthly billings trend and media channel distribution analysis' }
         ]
       },
       recommendations: [
@@ -239,7 +239,7 @@ export const projectsData = [
     title: 'Customer Payment Dashboard',
     category: ['Tableau', 'Data Modeling'],
     description: 'Sales and payment analytics with geographic distribution and customer insights',
-    thumbnail: '/assets/img/projects/customer payment.jpeg',
+    thumbnail: `${process.env.PUBLIC_URL}/assets/img/projects/customer payment.jpeg`,
     caseStudy: {
       background: [
         'A sales organization needed comprehensive visibility into payment transactions across multiple geographic regions and customer segments.',
@@ -252,7 +252,7 @@ export const projectsData = [
       results: {
         description: 'Delivered a comprehensive payment analytics dashboard showing average settlement amount of 248.26 across 24 unique customers. Geographic analysis revealed Utah leading in authorization amounts (1.17K, 33.1%), followed by California (2.53K, 20.8%). Customer analysis identified top performers like Uganda (0.81K, 14.9%) and Diamond (1.88K, 32.62%). Monthly trending showed peak settlement in October at 3.5K.',
         visualizations: [
-          { type: 'dashboard', src: '/assets/img/projects/customer payment.jpeg', alt: 'Sales dashboard overview', caption: 'Comprehensive sales and payment analytics dashboard' }
+          { type: 'dashboard', src: `${process.env.PUBLIC_URL}/assets/img/projects/customer payment.jpeg`, alt: 'Sales dashboard overview', caption: 'Comprehensive sales and payment analytics dashboard' }
         ]
       },
       recommendations: [
