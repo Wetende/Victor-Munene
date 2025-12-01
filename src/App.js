@@ -96,7 +96,7 @@ function App() {
                 {/* Privacy */}
                 <Route
                   path="/privacy"
-                  element={<Privacy style={{ "--base-color": "#0038e3" }} />}
+                  element={<Privacy style={{ "--base-color": "#0891b2" }} />}
                 />
 
                 {/* 404 - Catch all */}

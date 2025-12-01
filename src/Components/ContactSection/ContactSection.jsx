@@ -47,7 +47,7 @@ const ContactSection = () => {
                 href={`mailto:${email}?subject=${encodeURIComponent(
                   'Project inquiry from portfolio'
                 )}&body=${encodeURIComponent('Hi Victor,\n\nI would like to discuss...')}`}
-                className="inline-flex items-center justify-center px-8 py-4 bg-darkgray text-white font-serif font-semibold uppercase tracking-wider hover:bg-cyan-600 hover:text-white transition-colors duration-300 rounded-full"
+                className="inline-flex items-center justify-center px-8 py-4 bg-cyan-600 text-white font-serif font-semibold uppercase tracking-wider hover:bg-darkgray hover:text-white transition-colors duration-300 rounded-full"
               >
                 Email Me
               </a>

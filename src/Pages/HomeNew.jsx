@@ -96,19 +96,19 @@ const HomeNew = (props) => {
       </Element>
 
       {/* Footer */}
-      <Footer className="bg-gray-50 py-12" theme="light">
+      <Footer className="bg-secondary py-12" theme="dark">
         <Container>
           <Row>
             <Col lg={4} className="justify-start md:justify-center md:mb-5 flex items-center">
-              <span className="font-serif font-semibold text-sm uppercase text-darkgray">
+              <span className="font-serif font-semibold text-sm uppercase text-white">
                 {footerData.tagline}
               </span>
             </Col>
             <Col lg={4} className="text-center md:mb-5">
-              <SocialIcons theme="social-icon-style-12" iconColor="dark" size="md" data={socialIconsData} />
+              <SocialIcons theme="social-icon-style-12" iconColor="light" size="md" data={socialIconsData} />
             </Col>
             <Col lg={4} className="text-right justify-end md:justify-center md:text-center flex items-center">
-              <p className="font-serif font-semibold text-sm uppercase text-darkgray leading-[30px]">
+              <p className="font-serif font-semibold text-sm uppercase text-white leading-[30px]">
                 {footerData.copyright}
               </p>
             </Col>

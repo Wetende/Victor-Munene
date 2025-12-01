@@ -100,10 +100,10 @@ export const projectsData = [
         ]
       },
       recommendations: [
-        'Implement predictive models for revenue forecasting',
-        'Add player segmentation analysis to understand high-value customers',
-        'Create automated alerts for payout anomalies',
-        'Integrate marketing campaign data to correlate with revenue spikes'
+        'I can design and deploy predictive revenue models so your team can forecast GGR and payouts with confidence',
+        'I can build player segmentation to surface high-value cohorts and tailor incentives that grow lifetime value',
+        'I can implement automated payout anomaly alerts to protect margins and flag unusual behavior in real time',
+        'I can connect marketing and gaming data to show which campaigns actually drive incremental revenue'
       ]
     }
   },
@@ -131,10 +131,10 @@ export const projectsData = [
         ]
       },
       recommendations: [
-        'Add predictive analytics for financial forecasting',
-        'Implement automated variance analysis alerts',
-        'Create executive summary views for board presentations',
-        'Integrate budget vs actual comparisons'
+        'I can build predictive financial models to forecast revenue, costs, and cash flow for planning',
+        'I can implement automated variance alerts so finance leaders are notified when KPIs drift from plan',
+        'I can design executive summary views tailored for C-level and board reporting',
+        'I can integrate budget vs actual tracking to highlight overspend and savings opportunities'
       ]
     }
   },
@@ -161,11 +161,11 @@ export const projectsData = [
         ]
       },
       recommendations: [
-        'Implement predictive analytics for budget forecasting',
-        'Add automated alerts for budget threshold breaches',
-        'Create vendor performance scorecards',
-        'Integrate purchase requisition workflow tracking',
-        'Add year-over-year comparison analysis'
+        'I can build predictive budget-consumption models to flag departments at risk of overspending',
+        'I can set up automated alerts when commitments or actuals approach key thresholds',
+        'I can create vendor performance scorecards using delivery, quality, and cost metrics',
+        'I can integrate purchase requisition workflow data to uncover process bottlenecks',
+        'I can add year-over-year spend comparisons to show how procurement efficiency is improving'
       ]
     }
   },
@@ -193,11 +193,11 @@ export const projectsData = [
         ]
       },
       recommendations: [
-        'Implement predictive analytics for cost forecasting',
-        'Add automated variance alerts for significant deviations',
-        'Create department-level drill-through capabilities',
-        'Integrate budget reforecasting workflows',
-        'Add scenario planning for what-if analysis'
+        'I can build cost-forecasting models that incorporate trend and seasonality',
+        'I can configure automated variance alerts so managers see issues before month-end close',
+        'I can add department-level drill-through so leaders can own and investigate their numbers',
+        'I can integrate budget reforecasting workflows directly into the dashboards',
+        'I can enable scenario planning and what-if analysis to test cost-reduction or growth strategies'
       ]
     }
   },
@@ -225,11 +225,11 @@ export const projectsData = [
         ]
       },
       recommendations: [
-        'Implement customer segmentation for targeted growth strategies',
-        'Add predictive analytics for billing forecasting',
-        'Create automated alerts for significant customer billing changes',
-        'Integrate campaign performance data with billing metrics',
-        'Add competitive benchmarking for media channel performance'
+        'I can implement customer segmentation to target high-growth and at-risk accounts',
+        'I can build billing-forecast models to support capacity and revenue planning',
+        'I can configure automated alerts when key customers change their billing patterns',
+        'I can link campaign performance data to billings so you see ROI by channel and client',
+        'I can add competitive and media benchmarking to show where to shift spend for impact'
       ]
     }
   },
@@ -256,12 +256,12 @@ export const projectsData = [
         ]
       },
       recommendations: [
-        'Implement predictive analytics for payment forecasting',
-        'Add customer lifetime value analysis',
-        'Create automated alerts for unusual payment patterns',
-        'Integrate fraud detection mechanisms',
-        'Add payment method performance analysis',
-        'Develop customer retention scoring based on payment behavior'
+        'I can build payment-forecasting models using seasonality and customer behavior',
+        'I can calculate and track customer lifetime value to prioritize retention efforts',
+        'I can configure automated alerts for unusual payment patterns or potential churn',
+        'I can integrate fraud-detection rules and risk scores directly into the dashboards',
+        'I can analyze payment-method performance to optimize fees and conversion rates',
+        'I can create customer retention and risk scores based on payment and engagement behavior'
       ]
     }
   }

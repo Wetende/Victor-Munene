@@ -32,7 +32,13 @@ module.exports = {
         8: '8px'
       },
       colors: {
-        fastblue: '#0038e3',
+        primary: '#0891b2', // Pacific Cyan
+        secondary: '#0f172a', // Slate Navy
+        text: '#334155', // Graphite
+        accent: '#6366f1', // Data Purple
+        
+        // Legacy colors (keeping for compatibility during migration)
+        fastblue: '#0891b2', // Updated to match primary
         darkgray: '#232323',
         darkslateblue: '#1f232c',
         lightgray: '#f7f7f7',

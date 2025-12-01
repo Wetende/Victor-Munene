@@ -11,14 +11,14 @@ const SkillCard = ({ icon, title, description, delay = 0 }) => (
     viewport={{ once: true }}
     transition={{ duration: 0.4, delay }}
   >
-    <div className="h-full p-6 rounded-xl bg-[#1a1a2e] border border-gray-800 hover:border-cyan-500/50 hover:-translate-y-2 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 group cursor-default">
-      <div className="text-cyan-400 text-4xl lg:text-5xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 inline-block">
+    <div className="h-full p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:border-cyan-500/50 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group cursor-default">
+      <div className="text-cyan-600 text-4xl lg:text-5xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 inline-block">
         <i className={icon}></i>
       </div>
-      <h3 className="font-serif font-semibold text-white text-lg mb-2 group-hover:text-cyan-400 transition-colors">
+      <h3 className="font-serif font-semibold text-darkgray text-lg mb-2 group-hover:text-cyan-600 transition-colors">
         {title}
       </h3>
-      <p className="font-serif text-sm text-gray-400 leading-relaxed">
+      <p className="font-serif text-sm text-gray-600 leading-relaxed">
         {description}
       </p>
     </div>
@@ -27,7 +27,7 @@ const SkillCard = ({ icon, title, description, delay = 0 }) => (
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 md:py-32 bg-[#0f0f1a]">
+    <section id="skills" className="py-24 md:py-32 bg-gray-50">
       <Container>
         {/* Section Header */}
         <m.div
@@ -37,10 +37,10 @@ const SkillsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="font-serif font-bold text-3xl md:text-4xl text-white mb-2">
-            My <span className="text-cyan-400">Skills</span>
+          <h2 className="font-serif font-bold text-3xl md:text-4xl text-darkgray mb-2">
+            My <span className="text-cyan-600">Skills</span>
           </h2>
-          <div className="w-16 h-1 bg-cyan-400 mx-auto mt-4 rounded-full"></div>
+          <div className="w-16 h-1 bg-cyan-600 mx-auto mt-4 rounded-full"></div>
         </m.div>
 
         {/* Skills Grid - 3 cards per row, 2 rows */}
